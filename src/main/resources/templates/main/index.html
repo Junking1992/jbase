@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>System</title>
+<link rel="stylesheet" type="text/css"
+	href="css/easyui/themes/metro/easyui.css" />
+<link rel="stylesheet" type="text/css" href="css/easyui/themes/icon.css" />
+<link rel="stylesheet" type="text/css" href="css/easyui/demo/demo.css" />
+<script src="js/easyui/jquery.min.js"></script>
+<script src="js/easyui/jquery.easyui.min.js"></script>
+<script src="js/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script src="js/main.js"></script>
+<style type="text/css">
+.title {
+	height: 40px;
+	line-height:35px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #336699;
+}
+.copyright {
+	height: 30px;
+	line-height:25px;
+	text-align:center;
+	color: #000;
+}
+</style>
+</head>
+<body class="easyui-layout">
+	<!-- Top -->
+	<div data-options="region:'north'" class="title">
+		jQuery EasyUI RSS Reader Demo
+	</div>
+	<!-- Left -->
+	<div data-options="region:'west'" title="功能" style="width: 300px;">
+		<ul class="easyui-tree" data-options="url:'data/channels.json',method:'get',animate:true"></ul>
+	</div>
+	<!-- Center -->
+	<div data-options="region:'center'">
+		<div id="tab" class="easyui-tabs" data-options="fit:true,border:false">
+			<div title="主页"></div>
+			<div title="维护"></div>
+		</div>
+	</div>
+	<!-- Down -->
+	<div data-options="region:'south'" class="copyright">
+		Powered by Jbase
+	</div>
+</body>
+</html>
